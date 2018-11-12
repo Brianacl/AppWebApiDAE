@@ -1,0 +1,14 @@
+C:\NETCore\AppWebApiDAE\AppWebApiDAE\bin\Debug\netcoreapp2.1\AppWebApiDAE.deps.json
+C:\NETCore\AppWebApiDAE\AppWebApiDAE\bin\Debug\netcoreapp2.1\AppWebApiDAE.runtimeconfig.json
+C:\NETCore\AppWebApiDAE\AppWebApiDAE\bin\Debug\netcoreapp2.1\AppWebApiDAE.runtimeconfig.dev.json
+C:\NETCore\AppWebApiDAE\AppWebApiDAE\bin\Debug\netcoreapp2.1\AppWebApiDAE.dll
+C:\NETCore\AppWebApiDAE\AppWebApiDAE\obj\Debug\netcoreapp2.1\AppWebApiDAE.csprojAssemblyReference.cache
+C:\NETCore\AppWebApiDAE\AppWebApiDAE\obj\Debug\netcoreapp2.1\AppWebApiDAE.csproj.CoreCompileInputs.cache
+C:\NETCore\AppWebApiDAE\AppWebApiDAE\obj\Debug\netcoreapp2.1\AppWebApiDAE.RazorAssemblyInfo.cache
+C:\NETCore\AppWebApiDAE\AppWebApiDAE\obj\Debug\netcoreapp2.1\AppWebApiDAE.RazorAssemblyInfo.cs
+C:\NETCore\AppWebApiDAE\AppWebApiDAE\obj\Debug\netcoreapp2.1\AppWebApiDAE.AssemblyInfoInputs.cache
+C:\NETCore\AppWebApiDAE\AppWebApiDAE\obj\Debug\netcoreapp2.1\AppWebApiDAE.AssemblyInfo.cs
+C:\NETCore\AppWebApiDAE\AppWebApiDAE\obj\Debug\netcoreapp2.1\AppWebApiDAE.RazorTargetAssemblyInfo.cache
+C:\NETCore\AppWebApiDAE\AppWebApiDAE\bin\Debug\netcoreapp2.1\AppWebApiDAE.pdb
+C:\NETCore\AppWebApiDAE\AppWebApiDAE\obj\Debug\netcoreapp2.1\AppWebApiDAE.dll
+C:\NETCore\AppWebApiDAE\AppWebApiDAE\obj\Debug\netcoreapp2.1\AppWebApiDAE.pdb
