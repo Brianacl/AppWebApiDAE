@@ -23,8 +23,9 @@ namespace AppWebApiDAE.Controllers
         [HttpGet]
         public ActionResult<List<Eva_cat_edificios>> GetAllEdificios()
         {
-            var edificios = _context.eva_Cat_Edificios.Include(
-                s => s.Espacios).ToList();
+            //var edificios = _context.eva_Cat_Edificios.Include(
+            //    s => s.Espacios).ToList();
+            var edificios = _context.eva_Cat_Edificios.ToList();
 
             return edificios;
             //return _context.eva_Cat_Edificios.ToList();
@@ -55,24 +56,26 @@ namespace AppWebApiDAE.Controllers
         {
 
             var edificioEncontrado = _context.eva_Cat_Edificios.Find(id);
-            if(edificioEncontrado == null)
+            if (edificioEncontrado == null)
             {
-                return NotFound();
+                Create(edificio);
             }
+            else
+            {
+                edificioEncontrado.Alias = edificio.Alias;
+                edificioEncontrado.DesEdificio = edificio.DesEdificio;
+                edificioEncontrado.Prioridad = edificio.Prioridad;
+                edificioEncontrado.Clave = edificio.Clave;
+                edificioEncontrado.FechaUltMod = edificio.FechaUltMod;
+                edificioEncontrado.FechaReg = edificio.FechaReg;
+                edificioEncontrado.UsuarioReg = edificio.UsuarioReg;
+                edificioEncontrado.UsuarioMod = edificio.UsuarioMod;
+                edificioEncontrado.Activo = edificio.Activo;
+                edificioEncontrado.Borrado = edificio.Borrado;
 
-            edificioEncontrado.Alias = edificio.Alias;
-            edificioEncontrado.DesEdificio = edificio.DesEdificio;
-            edificioEncontrado.Prioridad = edificio.Prioridad;
-            edificioEncontrado.Clave = edificio.Clave;
-            edificioEncontrado.FechaUltMod = edificio.FechaUltMod;
-            edificioEncontrado.FechaReg = edificio.FechaReg;
-            edificioEncontrado.UsuarioReg = edificio.UsuarioReg;
-            edificioEncontrado.UsuarioMod = edificio.UsuarioMod;
-            edificioEncontrado.Activo = edificio.Activo;
-            edificioEncontrado.Borrado = edificio.Borrado;
-
-            _context.eva_Cat_Edificios.Update(edificioEncontrado);
-            _context.SaveChanges();
+                _context.eva_Cat_Edificios.Update(edificioEncontrado);
+                _context.SaveChanges();
+            }
             return NoContent();
         }//Fin UPDATE
        
